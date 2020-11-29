@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.hakan.rickandmortyapi2"},{"l":"com.hakan.rickandmortyapi2.controller"},{"l":"com.hakan.rickandmortyapi2.model"},{"l":"com.hakan.rickandmortyapi2.model.response"}]

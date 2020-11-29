@@ -1,0 +1,35 @@
+Dökümantasyon
+
+Uygulama ayağa kaldırıldığında http://localhost:8080/ adresinden ayağa kalkmaktadır.
+
+Uygulama sorguları kalkan adresin sonuna eklenen endpointler ile yapılır. Bunlar;
+
+/character : 
+	-Character sonucu döner. Default değerler olarak sayfalama yapılmıştır. Sayfanın eleman sınırı 20 dir. 1. sayfa döner.
+	-Kullanıcı istediği sayfaya gidebilmek için  endpoint sonuna ?page={değer} girilmelidir. page=2 gibi.
+	-Kullanıcı sayfaya farklı miktarda değer gelmesini isterse, pageSize={değer} girmelidir. pageSize=30 gibi.
+	-Kullanıcı sayfayı sortlayabilmektedir. Characterin yer aldığı bölüm miktarına göre büyükten küçüğe ve Character ismine göre sıralanmaktadır.
+	
+	/{id} : 
+		-Id si verilen Character gelmektedir.
+		
+/episode : 
+	-Episode sonucu döner. Default değerler olarak sayfalama yapılmıştır. Sayfanın eleman sınırı 20 dir. 1. sayfa döner.
+	-Kullanıcı istediği sayfaya gidebilmek için  endpoint sonuna ?page={değer} girilmelidir. page=2 gibi.
+	-Kullanıcı sayfaya farklı miktarda değer gelmesini isterse, pageSize={değer} girmelidir. pageSize=30 gibi.
+	-Kullanıcı sayfayı sortlayabilmektedir. Episode içerisinde yer alan karakter miktarına göre büyükten küçüğe ve Episode ismine göre sıralanmaktadır.
+	
+	/{id} : 
+		-Id si verilen Episode gelmektedir.
+		
+/location : 
+	-Location sonucu döner. Default değerler olarak sayfalama yapılmıştır. Sayfanın eleman sınırı 20 dir. 1. sayfa döner.
+	-Kullanıcı istediği sayfaya gidebilmek için  endpoint sonuna ?page={değer} girilmelidir. page=2 gibi.
+	-Kullanıcı sayfaya farklı miktarda değer gelmesini isterse, pageSize={değer} girmelidir. pageSize=30 gibi.
+	
+	/{id} : 
+		-Id si verilen Location gelmektedir.
+	
+/report :
+	-Kullanıcının girdiği endpointlerin bilgisi gelmektedir. 
+	-Ziyaret edilen her endpointe ait zaman, id, page numarası, miktarı gibi değerler tutulur.
